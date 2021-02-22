@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Select Vehical</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="districtForm">    
+  <ion-row>
+    <ion-col style="text-align: center">
+    <div class="dropdown">
+        <ion-select placeholder="Select Driving option" formControlName="driverType">
+          <ion-select-option value="selfDrive">Self Drive</ion-select-option>
+          <ion-select-option value="withDriver">With Driver</ion-select-option>
+        </ion-select>
+    </div>
+  </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col style="text-align: center">
+    <div class="dropdown">
+        <ion-select placeholder="Click here to Select District" formControlName="district">
+          <ion-select-option value="ampara">Ampara</ion-select-option>
+          <ion-select-option value="Anuradhapura">Anuradhapura</ion-select-option>
+          <ion-select-option value="Badulla">Badulla</ion-select-option>
+          <ion-select-option value="Batticaloa">Batticaloa</ion-select-option>
+          <ion-select-option value="Colombo">Colombo</ion-select-option>
+          <ion-select-option value="Galle">Galle</ion-select-option>
+          <ion-select-option value="Gampaha">Gampaha</ion-select-option>
+          <ion-select-option value="Hambantota">Hambantota</ion-select-option>
+          <ion-select-option value="Jaffna">Jaffna</ion-select-option>
+          <ion-select-option value="Kalutara">Kalutara</ion-select-option>
+          <ion-select-option value="Kandy">Kandy</ion-select-option>
+          <ion-select-option value="Kegalle">Kegalle</ion-select-option>
+          <ion-select-option value="Kilinochchi">Kilinochchi</ion-select-option>
+          <ion-select-option value="Kurunegala">Kurunegala</ion-select-option>
+          <ion-select-option value="Mannar">Mannar</ion-select-option>
+          <ion-select-option value="Matale">Matale</ion-select-option>
+          <ion-select-option value="Matara">Matara</ion-select-option>
+          <ion-select-option value="Monaragala">Monaragala</ion-select-option>
+          <ion-select-option value="Mullaitivu">Mullaitivu</ion-select-option>
+          <ion-select-option value="Nuwara Eliya">Nuwara Eliya</ion-select-option>
+          <ion-select-option value="Polonnaruwa">Polonnaruwa</ion-select-option>
+          <ion-select-option value="Puttalam">Puttalam</ion-select-option>
+          <ion-select-option value="Puttalam">Puttalam</ion-select-option>
+          <ion-select-option value="Trincomalee">Trincomalee</ion-select-option>
+          <ion-select-option value="Vavuniya">Vavuniya</ion-select-option>
+        </ion-select>
+    </div>
+  </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col style="text-align: center">
+    <div class="dropdown">
+        <ion-select placeholder="Select Vehical Type" formControlName="vehicalType">
+          <ion-select-option value="footBike">Foot Bike</ion-select-option>
+          <ion-select-option value="motorBike">Motor Bike</ion-select-option>
+          <ion-select-option value="threeVeel">Three Veel</ion-select-option>
+          <ion-select-option value="car">Car</ion-select-option>
+          <ion-select-option value="van">Van</ion-select-option>
+          <ion-select-option value="miniLorry">Mini Lorry</ion-select-option>
+          <ion-select-option value="heavyLorry">Heavy Lorry</ion-select-option>
+
+        </ion-select>
+    </div>
+  </ion-col>
+  </ion-row>
+</form>
+  <ion-row>
+    <ion-col width-50 style="text-align: center">
+      <ion-button (click)="findVehical()" color="success"> <ion-icon name="search-outline"></ion-icon>&nbsp;&nbsp; Start Find</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

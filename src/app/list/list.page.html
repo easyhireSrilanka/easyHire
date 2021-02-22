@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Ads</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+
+    <div *ngFor = 'let vehical of vehicalList'>
+      <ion-card>
+          <ion-item (click)="getCountry(registry)" >
+            <ion-thumbnail slot="start">
+                <img class="logo" src="{{vehical.image}}" alt="veh">
+            </ion-thumbnail>
+            <ion-label class="card-title">{{vehical.name}}</ion-label>
+          </ion-item>
+        </ion-card>
+    </div>
+    <!-- fab placed to the top end -->
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="gotoAddVehical()">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form [formGroup]="loginForm" (ngSubmit)="logForm()">
+    <ion-item>
+      <ion-label>Mobile Number:</ion-label>
+      <ion-input type="text" formControlName="mobileNumber"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password:</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <div class="ion-text-end">
+    <ion-button type="submit" [disabled]="!loginForm.valid">Login</ion-button>
+    </div>
+  </form>
+<br>
+<br>
+<br>
+<div class="ion-text-center">
+  <ion-label style="right: auto;">if you don't have account Please Resister</ion-label>
+  </div>
+<br>
+  <!-- <ion-button class="register">Register</ion-button> -->
+
+  <div class="ion-text-center">
+    <ion-button fill="outline" size="default" color="dark" (click)="register()">Register</ion-button>
+</div>
+
+</ion-content>
+
+
